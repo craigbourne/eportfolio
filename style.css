@@ -199,6 +199,16 @@ nav h1 {
   text-decoration: none;
   display: inline-block;
   margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #eb4a4a;
+  transition: all 0.3s ease;
+  width:fit-content;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
 }
 
 /* Media Queries */
@@ -229,15 +239,12 @@ nav h1 {
     width: 100%;
     order: 3;
     padding: 20px 0;
-    border: 1px solid #888;
-    border-radius: 0 0 5px 5px;
   }
 
   .menu.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .menu-item {
