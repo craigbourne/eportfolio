@@ -330,3 +330,65 @@ nav h1 {
     object-fit: contain;
   }
 }
+
+/* Modules Page Styles */
+.content {
+  width: 60%;
+  margin: 100px auto 0;
+  padding: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.content-paragraph {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.module-list, 
+.unit-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.module-list li,
+.unit-list li {
+  margin-bottom: 10px;
+}
+
+.module-list a,
+.unit-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.module-list a:hover,
+.unit-list a:hover {
+  color: #eb4a4a;
+}
+
+@media (max-width: 1000px) {
+
+  .content {
+    width: 85%;
+  }
+}
+
+.content-block {
+  /* padding: 20px; */
+  margin-bottom: 40px;
+}
+
+.content-block ul{
+  padding-left: 40px;
+}
+
+.content-block li{
+      margin-bottom: 10px;
+}
+
