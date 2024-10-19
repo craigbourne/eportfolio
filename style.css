@@ -407,5 +407,6 @@ border-radius: 0 0 5px 5px;
 .greyed-out a:hover{
   color: #555;
   background-color: #000;
+  cursor:default;
 }
 
