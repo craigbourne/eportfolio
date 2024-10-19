@@ -51,6 +51,14 @@ nav {
   padding: 20px;
 }
 
+a {
+text-decoration: none;
+}
+
+a .logo {
+color: #fff
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -245,6 +253,9 @@ nav h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  border: 1px solid #333;
+border-top: none;
+border-radius: 0 0 5px 5px;
   }
 
   .menu-item {
@@ -390,5 +401,11 @@ nav h1 {
 
 .content-block li{
       margin-bottom: 10px;
+}
+
+.greyed-out a,
+.greyed-out a:hover{
+  color: #555;
+  background-color: #000;
 }
 
