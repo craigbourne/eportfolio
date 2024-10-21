@@ -426,6 +426,10 @@ border-radius: 0 0 5px 5px;
   width: fit-content;
 } */
 
+.unit-work li {
+  list-style-type: none;
+}
+
 .unit-work a {
   color: #fff;
   font-weight: 700;
@@ -435,6 +439,7 @@ border-radius: 0 0 5px 5px;
   border-radius: 5px;
   width: fit-content;
   display: block;
+  
 }
 
 .unit-work a:hover {
@@ -456,7 +461,6 @@ border-radius: 0 0 5px 5px;
   /* padding: 0 20px; */
   padding-left: 0;
   list-style-position: inside;
-
 }
 
 .work-list a {
@@ -474,10 +478,13 @@ border-radius: 0 0 5px 5px;
   color: #000;
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 .answer img {
-  width: 100%;
+  width: 100%; 
+  margin: 10px auto;
+  border-radius: 5px;
 }
 
 .answer h3 {
