@@ -531,6 +531,7 @@ border-radius: 0 0 5px 5px;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-self: baseline;
 }
 
 .navigation-links-right {
@@ -545,4 +546,8 @@ border-radius: 0 0 5px 5px;
 .navigation-links a:hover,
 .navigation-links-right a:hover {
   color: #eb4a4a;
+}
+
+ul ul {
+  padding: 10px 0 0 20px;
 }
