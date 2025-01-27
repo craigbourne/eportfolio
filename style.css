@@ -541,3 +541,8 @@ border-radius: 0 0 5px 5px;
 .navigation-links-right a {
   color: #fff;
 }
+
+.navigation-links a:hover,
+.navigation-links-right a:hover {
+  color: #eb4a4a;
+}
