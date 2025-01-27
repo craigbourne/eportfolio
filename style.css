@@ -362,6 +362,11 @@ border-radius: 0 0 5px 5px;
   margin-bottom: 30px;
 }
 
+.content-list-paragraph {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
 .content-list {
   padding-left: 20px;
 }
