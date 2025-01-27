@@ -20,18 +20,19 @@ body {
 /* Typography */
 h2 {
   font-size: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 20px 0;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
 p {
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 /* Navigation */
@@ -352,7 +353,7 @@ border-radius: 0 0 5px 5px;
 .content h2,
 .content-heading {
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .content-paragraph,
@@ -365,8 +366,16 @@ border-radius: 0 0 5px 5px;
   padding-left: 20px;
 }
 
-.content-list li {
+.content-list {
   padding: 4px 0;
+}
+
+.reading-list {
+  list-style-type: disc;
+  padding-left: 12px;
+}
+.reading-list li {
+  padding-bottom: 8px;
 }
 
 .module-list {
