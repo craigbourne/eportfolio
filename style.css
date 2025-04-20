@@ -588,3 +588,11 @@ a.regular-link:hover {
 ul ul {
   padding: 10px 0 0 20px;
 }
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
