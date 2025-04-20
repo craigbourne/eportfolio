@@ -407,6 +407,14 @@ nav h1 {
   color: #eb4a4a;
 }
 
+a.regular-link {
+  color: #eb4a4a;
+}
+
+a.regular-link:hover {
+  color: #4a4aeb;
+}
+
 @media (max-width: 1000px) {
 
   .content {
