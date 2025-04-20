@@ -382,6 +382,7 @@ nav h1 {
 
 .reading-list li {
   padding-bottom: 8px;
+  text-align: left;
 }
 
 .module-list {
