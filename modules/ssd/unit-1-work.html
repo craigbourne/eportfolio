@@ -32,7 +32,7 @@
             <li><a href="../ssd.html">Secure Software Development</a></li>
             <li class="greyed-out"><a href="#">Network Security</a></li>
             <li class="greyed-out"><a href="#">Information Security</a></li>
-            <li class="greyed-out"><a href="#">SE Project Management</a></li>
+            <li><a href="../sepm.html">SE Project Management</a></li>
             <li class="greyed-out"><a href="#">Research Methods</a></li>
           </ul>
         </li>
@@ -45,55 +45,108 @@
       <a href="#unit-1-answer">Jump to answer</a>
     </div>
     <h3>Requirements</h3>
-    <p class="content-paragraph">This discussion will last for 3 weeks covering units 1, 2 and 3. Ensure you include appropriate citations and references in all your posts (this is not included in the word count for each week's post/submission).</p>
+    <p class="content-paragraph">This discussion will last for 3 weeks covering units 1, 2 and 3. Ensure you include
+      appropriate citations and references in all your posts (this is not included in the word count for each week's
+      post/submission).</p>
     <h3>Discussion Topic</h3>
-    <p class="content-paragraph">Open source tools are available to create UML diagrams, some are listed below. This list is not exhaustive. The benefit of using such tools is that they ensure that the recognised UML components are used to represent the parts of the model correctly.</p>
+    <p class="content-paragraph">Open source tools are available to create UML diagrams, some are listed below. This
+      list is not exhaustive. The benefit of using such tools is that they ensure that the recognised UML components are
+      used to represent the parts of the model correctly.</p>
     <ul class="content-list">
       <li>Visual Paradigm</li>
       <li>Sequence Diagram</li>
       <li>Umbrello</li>
     </ul>
-    <p class="content-paragraph"> Choose an open-source UML tool from the list above. Select one of the coding weaknesses which have been identified by OWASP and create a flowchart of the steps which may have led to the weakness occurring. Which UML models might you use to present the design of your proposed software, and why are they the most appropriate choice(s)? </p>
+    <p class="content-paragraph"> Choose an open-source UML tool from the list above. Select one of the coding
+      weaknesses which have been identified by OWASP and create a flowchart of the steps which may have led to the
+      weakness occurring. Which UML models might you use to present the design of your proposed software, and why are
+      they the most appropriate choice(s)? </p>
     <h3>Learning Outcomes</h3>
     <ul class="content-list">
       <li>Identify and manage security risks as part of a software development project.</li>
-      <li>Critically analyse development problems and determine appropriate methodologies, tools and techniques (including program design and development) to solve them.</li>
+      <li>Critically analyse development problems and determine appropriate methodologies, tools and techniques
+        (including program design and development) to solve them.</li>
     </ul>
     <h3>Assignment Guidance</h3>
     <ul class="content-list">
-      <li>Your initial posting should respond to the question and be at least 200 words long. This should be labelled as 'Initial Post'</li>
-      <li>You will then respond to at least 2 of your peers' posts in unit 2 (each labelled as 'Peer Response'). To guide your responses, look at the guidelines for the peer review process on the Department's homepage. Focus on the possible measures that could have been put in place in order to prevent the incidents highlighted by your peers. Please try to limit your response posts to 200-300 words maximum, so that others may be encouraged to reflect on, and respond to your ideas. </li>
-      <li>In Unit 3, you should provide a summary post based on your initial post, the feedback from your peers and the content of the three units. Please label this as ‘Summary Post’. It should be 300 words. </li>
-      <li>Referencing: When you have referred to other authors thoughts, ideas and opinions in your posts, you must reference the author as you would in an academic assignment using the UoEO Harvard reference style.</li>
-      <li>Referencing: When you have referred to other authors thoughts, ideas and opinions in your posts, you must reference the author as you would in an academic assignment using the UoEO Harvard reference style.</li>
-      <li>This activity forms a component of your e-portfolio which you will submit in unit 12. All e-portfolio activities are intended to demonstrate your ability and strengths through evidence and reflection.</li>
+      <li>Your initial posting should respond to the question and be at least 200 words long. This should be labelled as
+        'Initial Post'</li>
+      <li>You will then respond to at least 2 of your peers' posts in unit 2 (each labelled as 'Peer Response'). To
+        guide your responses, look at the guidelines for the peer review process on the Department's homepage. Focus on
+        the possible measures that could have been put in place in order to prevent the incidents highlighted by your
+        peers. Please try to limit your response posts to 200-300 words maximum, so that others may be encouraged to
+        reflect on, and respond to your ideas. </li>
+      <li>In Unit 3, you should provide a summary post based on your initial post, the feedback from your peers and the
+        content of the three units. Please label this as ‘Summary Post’. It should be 300 words. </li>
+      <li>Referencing: When you have referred to other authors thoughts, ideas and opinions in your posts, you must
+        reference the author as you would in an academic assignment using the UoEO Harvard reference style.</li>
+      <li>Referencing: When you have referred to other authors thoughts, ideas and opinions in your posts, you must
+        reference the author as you would in an academic assignment using the UoEO Harvard reference style.</li>
+      <li>This activity forms a component of your e-portfolio which you will submit in unit 12. All e-portfolio
+        activities are intended to demonstrate your ability and strengths through evidence and reflection.</li>
     </ul>
     <h3 id="unit-1-answer">Answer</h3>
     <div class="answer">
       <h3>Security Misconfiguration: OWASP Top 10 Analysis and UML Modelling</h3>
-      <p class="content-paragraph">The Open Web Application Security Project (OWASP) Foundation plays a crucial role in web application security by providing resources and guidelines for developers and security professionals. Their "Top 10 Web Application Security Risks" document is a critical resource, identifying and prioritising the most significant vulnerabilities in web applications (OWASP Foundation, 2024). Among these identified risks, A05:2021-Security Misconfiguration is a particularly prevalent and often underestimated threat (OWASP Foundation, 2021).</p>
-      <p class="content-paragraph">Security misconfiguration is a widespread vulnerability that can occur at any level of the application stack. It affects various components including network services, platforms, web servers, databases, and custom code (OWASP Foundation, 2021). The scope of potential misconfigurations presents a huge challenge for security teams, who must ensure proper configuration across a diverse and interconnected array of system components. This complexity is further compounded by the dynamic nature of modern web applications, where frequent updates and changes can inadvertently produce misconfigurations (Fritzsch et al., 2019).</p>
-      <p class="content-paragraph">The manifestations of security misconfiguration are both varied and dangerous. Unused features left enabled act as vulnerabilities for attackers, while default accounts and passwords provide easy access to the unwary (OWASP Foundation, 2021). Overly informative error handling can inadvertently provide attackers with insights into system vulnerabilities. In the rush to upgrade systems, organisations often overlook the critical step of properly configuring new security features, leaving themselves exposed to exploits targeting known vulnerabilities in older, unpatched systems (OWASP Foundation, 2022).</p>
-      <p class="content-paragraph">To address this complex issue, we can utilise Unified Modelling Language (UML) diagrams to help visualise systems. Through a series of diagrams, we can map out security configurations and identify potential vulnerabilities.</p>
-      <p class="content-paragraph">An activity diagram can provide a high-level view of the security configuration process:</p>
-      <a target="_blank" href="https://mermaid.live/edit#pako:eNpNkU9zgjAQxb9KZs_qIKICh3ZU_HdoD9pLCx4yZMXMQMKQpK1Fv3sjqENOeXm_vN1NakglQwghq2h5Ih9RIohds3ivaaUPpN9_IfN4IcWRZ6ZCspBFKQUKrQ4tOW-QRb3Db44_ZI9ac5Gpa-subu5lj6m9eyFRHMnUFPY2eSRSzaU4dOGtUHd8Gb9Jxo_nZ-idW7YlWxE1YhVHWObyTGZlmfO0m7pqgHW8w8zktCJNM1xb1DD-HGPdUJt6q5RBRVbSCPZ6H2LT9PWJ6kK28YyxCpUiLXjoEu_yQtbtwbYtCj0osCooZ_aF65uVgD5hgQmEdsvwSE2uE0jE1aLUaLk_ixRCXRnsQSVNdoLwSHNllSkZ1Rhxan-qeCAlFV9SdiWENfxC6I79wXQy9QN_OvJ913O8HpwhnEwG42A4dTw3GI19b-hde_DXBDgD3xu7rhP4I8e1zjC4_gP-BaYZ">Activity Diagram</a>
+      <p class="content-paragraph">The Open Web Application Security Project (OWASP) Foundation plays a crucial role in
+        web application security by providing resources and guidelines for developers and security professionals. Their
+        "Top 10 Web Application Security Risks" document is a critical resource, identifying and prioritising the most
+        significant vulnerabilities in web applications (OWASP Foundation, 2024). Among these identified risks,
+        A05:2021-Security Misconfiguration is a particularly prevalent and often underestimated threat (OWASP
+        Foundation, 2021).</p>
+      <p class="content-paragraph">Security misconfiguration is a widespread vulnerability that can occur at any level
+        of the application stack. It affects various components including network services, platforms, web servers,
+        databases, and custom code (OWASP Foundation, 2021). The scope of potential misconfigurations presents a huge
+        challenge for security teams, who must ensure proper configuration across a diverse and interconnected array of
+        system components. This complexity is further compounded by the dynamic nature of modern web applications, where
+        frequent updates and changes can inadvertently produce misconfigurations (Fritzsch et al., 2019).</p>
+      <p class="content-paragraph">The manifestations of security misconfiguration are both varied and dangerous. Unused
+        features left enabled act as vulnerabilities for attackers, while default accounts and passwords provide easy
+        access to the unwary (OWASP Foundation, 2021). Overly informative error handling can inadvertently provide
+        attackers with insights into system vulnerabilities. In the rush to upgrade systems, organisations often
+        overlook the critical step of properly configuring new security features, leaving themselves exposed to exploits
+        targeting known vulnerabilities in older, unpatched systems (OWASP Foundation, 2022).</p>
+      <p class="content-paragraph">To address this complex issue, we can utilise Unified Modelling Language (UML)
+        diagrams to help visualise systems. Through a series of diagrams, we can map out security configurations and
+        identify potential vulnerabilities.</p>
+      <p class="content-paragraph">An activity diagram can provide a high-level view of the security configuration
+        process:</p>
+      <a target="_blank"
+        href="https://mermaid.live/edit#pako:eNpNkU9zgjAQxb9KZs_qIKICh3ZU_HdoD9pLCx4yZMXMQMKQpK1Fv3sjqENOeXm_vN1NakglQwghq2h5Ih9RIohds3ivaaUPpN9_IfN4IcWRZ6ZCspBFKQUKrQ4tOW-QRb3Db44_ZI9ac5Gpa-subu5lj6m9eyFRHMnUFPY2eSRSzaU4dOGtUHd8Gb9Jxo_nZ-idW7YlWxE1YhVHWObyTGZlmfO0m7pqgHW8w8zktCJNM1xb1DD-HGPdUJt6q5RBRVbSCPZ6H2LT9PWJ6kK28YyxCpUiLXjoEu_yQtbtwbYtCj0osCooZ_aF65uVgD5hgQmEdsvwSE2uE0jE1aLUaLk_ixRCXRnsQSVNdoLwSHNllSkZ1Rhxan-qeCAlFV9SdiWENfxC6I79wXQy9QN_OvJ913O8HpwhnEwG42A4dTw3GI19b-hde_DXBDgD3xu7rhP4I8e1zjC4_gP-BaYZ">Activity
+        Diagram</a>
       <img src="../../images/activity-diagram.jpg" alt="activity diagram">
-      <p class="content-paragraph">This diagram highlights the critical decision points and actions in the security configuration process.</p>
+      <p class="content-paragraph">This diagram highlights the critical decision points and actions in the security
+        configuration process.</p>
       <p class="content-paragraph">To examine the logical structure of our system, we use a component diagram:</p>
-      <a target="_blank" href="https://mermaid.live/edit#pako:eNp1kc1qwzAQhF9F7NkJMXFso0PBjfNzSE8pFGr3sJEVRWBLRpZKnZB3r-qkxYV2T_o0M9JqdQGmKw4UhMH2RJ7zUhFfWfHCDyRr21oytFKrNzKZPJDHInP2xJW975I9N--S8bd7ajAtB5M28vy_Jy9ytEgyxnjXkR323Nz1fNBXg37A7ndsXey0EFKJPw_dFHvOnJG2J0utjlI4c-vgCRWKnxs2t6eMYTmGfAzrMWyLlTHakC2qqh53AQE03DQoKz_Jy1ekBD-nhpdA_bLiR3S1LaFUV29FZ_W-VwyoNY4HYLQTJ6BHrDtPrq3Q8lyi_5Hm29KietV6jEAv8AF0FkAPNEzCaRJHURKlsyRdxIvoGsB5CITT2a2iNE7j-TyMrp-_gZb8">Component Diagram</a>
+      <a target="_blank"
+        href="https://mermaid.live/edit#pako:eNp1kc1qwzAQhF9F7NkJMXFso0PBjfNzSE8pFGr3sJEVRWBLRpZKnZB3r-qkxYV2T_o0M9JqdQGmKw4UhMH2RJ7zUhFfWfHCDyRr21oytFKrNzKZPJDHInP2xJW975I9N--S8bd7ajAtB5M28vy_Jy9ytEgyxnjXkR323Nz1fNBXg37A7ndsXey0EFKJPw_dFHvOnJG2J0utjlI4c-vgCRWKnxs2t6eMYTmGfAzrMWyLlTHakC2qqh53AQE03DQoKz_Jy1ekBD-nhpdA_bLiR3S1LaFUV29FZ_W-VwyoNY4HYLQTJ6BHrDtPrq3Q8lyi_5Hm29KietV6jEAv8AF0FkAPNEzCaRJHURKlsyRdxIvoGsB5CITT2a2iNE7j-TyMrp-_gZb8">Component
+        Diagram</a>
       <img src="../../images/component-diagram.jpg" alt="component diagram">
-      <p class="content-paragraph">This diagram illustrates the interactions between different services within the application, highlighting areas where security configuration plays a pivotal role.</p>
-      <p class="content-paragraph">Finally, we examine the sequence diagram, which illustrates the process of a security audit:</p>
-      <a target="_blank" href="https://mermaid.live/edit#pako:eNqFksFuwjAMhl8l8pkhoKXQHJCqVpN22A6rJqSpF9OaEq0kXZqwMcS7L21BIME0n2L9X-w_dg6Qq4KAQ0OflmROicBS4zaTzEWN2ohc1CgNixg2LLKFMErfqmmrppRbLcyepTlKSXewZYstaeVQvbsHJC2QoMEVNnQrx60cK7kWJXtGieW5RvSwWKScPUlhBBrqHPRK6pQlZ_GG8o_TVavRCCWbC5D8B8ScvZLRgnbEYqs1tWY6tmfivr9jrJZnhwkZFNVVlaglaqUNexSyELJsLu5dh7e6aL3f8xD3r4jqutqzF_q6aZ78JZ4mk-YbKmxFTv823XhgAFvSWxSFW_-hhTMwG9pSBtwdC1qjrUwGmTw6FK1R6V7mwI22NACtbLkBvsaqcZntnJ_-zhlxG3tX6joFfoBv4N5sOJ_N_NE48IO5702DYAB74IE3DENvGk6D0dwfz8bh9DiAn67CeDjqw5tMJnMvnPjHXx1R3VE">Sequence Diagram</a>
+      <p class="content-paragraph">This diagram illustrates the interactions between different services within the
+        application, highlighting areas where security configuration plays a pivotal role.</p>
+      <p class="content-paragraph">Finally, we examine the sequence diagram, which illustrates the process of a security
+        audit:</p>
+      <a target="_blank"
+        href="https://mermaid.live/edit#pako:eNqFksFuwjAMhl8l8pkhoKXQHJCqVpN22A6rJqSpF9OaEq0kXZqwMcS7L21BIME0n2L9X-w_dg6Qq4KAQ0OflmROicBS4zaTzEWN2ohc1CgNixg2LLKFMErfqmmrppRbLcyepTlKSXewZYstaeVQvbsHJC2QoMEVNnQrx60cK7kWJXtGieW5RvSwWKScPUlhBBrqHPRK6pQlZ_GG8o_TVavRCCWbC5D8B8ScvZLRgnbEYqs1tWY6tmfivr9jrJZnhwkZFNVVlaglaqUNexSyELJsLu5dh7e6aL3f8xD3r4jqutqzF_q6aZ78JZ4mk-YbKmxFTv823XhgAFvSWxSFW_-hhTMwG9pSBtwdC1qjrUwGmTw6FK1R6V7mwI22NACtbLkBvsaqcZntnJ_-zhlxG3tX6joFfoBv4N5sOJ_N_NE48IO5702DYAB74IE3DENvGk6D0dwfz8bh9DiAn67CeDjqw5tMJnMvnPjHXx1R3VE">Sequence
+        Diagram</a>
       <img src="../../images/sequence-diagram.jpg" alt="sequence diagram">
-      <p class="content-paragraph">This diagram demonstrates the interactions between various system components during a security audit.</p>
-      <p class="content-paragraph">By leveraging these UML models, organisations can gain a comprehensive understanding of their security concerns. This enables more effective planning and implementation of security measures, reducing the risk of misconfigurations.</p>
+      <p class="content-paragraph">This diagram demonstrates the interactions between various system components during a
+        security audit.</p>
+      <p class="content-paragraph">By leveraging these UML models, organisations can gain a comprehensive understanding
+        of their security concerns. This enables more effective planning and implementation of security measures,
+        reducing the risk of misconfigurations.</p>
       <h3>References</h3>
       <ul class="reference-list">
-        <li>Fritzsch J., Bogner J., Zimmermann A. & Wagner S. (2019) From Monolith to Microservices: A Classification of Refactoring Approaches. In: Bruel JM., Mazzara M., Meyer B. (eds) Software Engineering Aspects of Continuous Development and New Paradigms of Software Production and Deployment. DEVOPS 2018. Lecture Notes in Computer Science, vol 11350. Springer. </li>
-        <li>OWASP Foundation. (2021) OWASP A05:2021 – Security Misconfiguration. Available from: from: https://owasp.org/Top10/A05_2021-Security_Misconfiguration/ [Accessed 10 October 2024].</li>
-        <li>OWASP Foundation. (2022) Improper Error Handling. Available from: https://owasp.org/www-community/Improper_Error_Handling [Accessed: 10 October 2024]. </li>
-        <li>OWASP Foundation. (2024) OWASP Top 10. Available from: https://owasp.org/www-project-top-ten [Accessed 10 October 2024].</li>
+        <li>Fritzsch J., Bogner J., Zimmermann A. & Wagner S. (2019) From Monolith to Microservices: A Classification of
+          Refactoring Approaches. In: Bruel JM., Mazzara M., Meyer B. (eds) Software Engineering Aspects of Continuous
+          Development and New Paradigms of Software Production and Deployment. DEVOPS 2018. Lecture Notes in Computer
+          Science, vol 11350. Springer. </li>
+        <li>OWASP Foundation. (2021) OWASP A05:2021 – Security Misconfiguration. Available from: from:
+          https://owasp.org/Top10/A05_2021-Security_Misconfiguration/ [Accessed 10 October 2024].</li>
+        <li>OWASP Foundation. (2022) Improper Error Handling. Available from:
+          https://owasp.org/www-community/Improper_Error_Handling [Accessed: 10 October 2024]. </li>
+        <li>OWASP Foundation. (2024) OWASP Top 10. Available from: https://owasp.org/www-project-top-ten [Accessed 10
+          October 2024].</li>
       </ul>
     </div>
   </main>

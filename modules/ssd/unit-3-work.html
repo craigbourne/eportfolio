@@ -32,7 +32,7 @@
             <li><a href="../ssd.html">Secure Software Development</a></li>
             <li class="greyed-out"><a href="#">Network Security</a></li>
             <li class="greyed-out"><a href="#">Information Security</a></li>
-            <li class="greyed-out"><a href="#">SE Project Management</a></li>
+            <li><a href="../sepm.html">SE Project Management</a></li>
             <li class="greyed-out"><a href="#">Research Methods</a></li>
           </ul>
         </li>
@@ -43,32 +43,87 @@
     <h2 class="content-heading">Programming Languages: History, Concepts & Design</h2>
     <div class="unit-work">
       <a href="#unit-3-questions">What is a Secure Programming Language? </a>
-      <a target="_blank" href="https://docs.google.com/document/d/1X1EwZb57V2YVNPreQeNxg2CiIbSdfqpdma0NU3Sz4u8/edit?usp=sharing">The Producer-Consumer Mechanism</a>
-      <a target="_blank" href="https://docs.google.com/document/d/1nUyPgE8WUIHpDY9F1HtIwJXNUU9EwHjuo2Tx7Sqt0iI/edit?usp=sharing">Python Tools and Features</a>
+      <a target="_blank"
+        href="https://docs.google.com/document/d/1X1EwZb57V2YVNPreQeNxg2CiIbSdfqpdma0NU3Sz4u8/edit?usp=sharing">The
+        Producer-Consumer Mechanism</a>
+      <a target="_blank"
+        href="https://docs.google.com/document/d/1nUyPgE8WUIHpDY9F1HtIwJXNUU9EwHjuo2Tx7Sqt0iI/edit?usp=sharing">Python
+        Tools and Features</a>
     </div>
     <h3 id="unit-3-questions">Team Discussion: What is a Secure Programming Language? </h3>
     <div class="answer">
       <h3>1. What factors determine whether a programming language is secure or not? </h3>
-      <p class="content-paragraph"> The security of a programming language is primarily determined by its ability to prevent common vulnerabilities and promote secure coding practices. Cifuentes and Bierman (2019) propose that a secure language should provide "first-class language support to address the causes for the most common, significant vulnerabilities found in real-world software" (Cifuentes & Bierman, 2019). Their analysis of the National Vulnerability Database identifies buffer errors, injection errors and information leak errors as the three most prevalent vulnerabilities (Cifuentes & Bierman, 2019). </p>
-      <p class="content-paragraph">A secure language should offer built-in mechanisms to mitigate vulnerabilities. This includes managed memory to prevent buffer overflows, strong type systems and input validation to guard against injection attacks and secure data handling to prevent information leaks. Pillai (2017) emphasises additional factors contributing to language security, including safe input handling, secure expression evaluation and built-in protections against web application vulnerabilities (Pillai, 2017). </p>
-      <p class="content-paragraph">Furthermore, a secure language should promote secure coding practices through its design and libraries, making it easier for developers to write secure code as standard. This could involve providing safe alternatives to potentially dangerous functions and implementing secure defaults in the language's core features and libraries. </p>
+      <p class="content-paragraph"> The security of a programming language is primarily determined by its ability to
+        prevent common vulnerabilities and promote secure coding practices. Cifuentes and Bierman (2019) propose that a
+        secure language should provide "first-class language support to address the causes for the most common,
+        significant vulnerabilities found in real-world software" (Cifuentes & Bierman, 2019). Their analysis of the
+        National Vulnerability Database identifies buffer errors, injection errors and information leak errors as the
+        three most prevalent vulnerabilities (Cifuentes & Bierman, 2019). </p>
+      <p class="content-paragraph">A secure language should offer built-in mechanisms to mitigate vulnerabilities. This
+        includes managed memory to prevent buffer overflows, strong type systems and input validation to guard against
+        injection attacks and secure data handling to prevent information leaks. Pillai (2017) emphasises additional
+        factors contributing to language security, including safe input handling, secure expression evaluation and
+        built-in protections against web application vulnerabilities (Pillai, 2017). </p>
+      <p class="content-paragraph">Furthermore, a secure language should promote secure coding practices through its
+        design and libraries, making it easier for developers to write secure code as standard. This could involve
+        providing safe alternatives to potentially dangerous functions and implementing secure defaults in the
+        language's core features and libraries. </p>
       <h3>2. Could Python be classed as a secure language? Justify your answer. </h3>
-      <p class="content-paragraph"> Python's classification as a secure language is not straightforward to answer and very much depends on the criteria used for evaluation. When considering the factors outlined by Cifuentes and Bierman (2019) and Pillai (2017), Python demonstrates both security strengths and weaknesses. </p>
-      <p class="content-paragraph"> Python's use of managed memory helps prevent buffer overflow errors, one of the most common vulnerabilities identified by Cifuentes and Bierman (2019). Pillai (2017) notes that "Python doesn't suffer from pure buffer overflow errors, as it always checks its containers for read/write access beyond the bounds and throws exceptions" (Pillai, 2017). Additionally, Python 3 has improved input handling compared to Python 2, addressing some of the vulnerabilities associated with the eval() function (Pillai, 2017). </p>
-      <p class="content-paragraph"> However, Python still includes potentially dangerous functions like exec(), which can be exploited if used carelessly (Pillai, 2017). The pickle module in Python is insecure (Python Software Foundation, n.d.) and can lead to arbitrary code execution if used with untrusted data (Pillai, 2017). Furthermore, Python does not provide built-in mechanisms to prevent information leaks, which is one of the top three vulnerability categories identified by Cifuentes and Bierman (2019). </p>
-      <p class="content-paragraph"> While Python addresses some security concerns, it does not fully meet the criteria set by Cifuentes and Bierman (2019) for a secure language, as it lacks the ability to prevent all three of the most common vulnerability categories identified. Therefore, while Python has some security advantages, it cannot be unequivocally classed as an inherently secure language according to strict definitions. The language's security largely depends on how it is used and the additional measures taken by developers to address shortcomings. </p>
+      <p class="content-paragraph"> Python's classification as a secure language is not straightforward to answer and
+        very much depends on the criteria used for evaluation. When considering the factors outlined by Cifuentes and
+        Bierman (2019) and Pillai (2017), Python demonstrates both security strengths and weaknesses. </p>
+      <p class="content-paragraph"> Python's use of managed memory helps prevent buffer overflow errors, one of the most
+        common vulnerabilities identified by Cifuentes and Bierman (2019). Pillai (2017) notes that "Python doesn't
+        suffer from pure buffer overflow errors, as it always checks its containers for read/write access beyond the
+        bounds and throws exceptions" (Pillai, 2017). Additionally, Python 3 has improved input handling compared to
+        Python 2, addressing some of the vulnerabilities associated with the eval() function (Pillai, 2017). </p>
+      <p class="content-paragraph"> However, Python still includes potentially dangerous functions like exec(), which
+        can be exploited if used carelessly (Pillai, 2017). The pickle module in Python is insecure (Python Software
+        Foundation, n.d.) and can lead to arbitrary code execution if used with untrusted data (Pillai, 2017).
+        Furthermore, Python does not provide built-in mechanisms to prevent information leaks, which is one of the top
+        three vulnerability categories identified by Cifuentes and Bierman (2019). </p>
+      <p class="content-paragraph"> While Python addresses some security concerns, it does not fully meet the criteria
+        set by Cifuentes and Bierman (2019) for a secure language, as it lacks the ability to prevent all three of the
+        most common vulnerability categories identified. Therefore, while Python has some security advantages, it cannot
+        be unequivocally classed as an inherently secure language according to strict definitions. The language's
+        security largely depends on how it is used and the additional measures taken by developers to address
+        shortcomings. </p>
       <h3>3. Python would be a better language to create operating systems than C. Discuss </h3>
-      <p class="content-paragraph"> The suitability of Python versus C for creating operating systems involves considering factors like performance, memory management, hardware interaction and security. While Python offers advantages in readability and certain security aspects, it is generally not considered a better choice than C for operating system development. </p>
-      <p class="content-paragraph"> Python's syntax can lead to more readable and maintainable code, potentially reducing the likelihood of human-introduced bugs in complex systems like operating systems (Pillai, 2017). Its automatic memory management, including garbage collection, can help prevent memory leaks and buffer overflow errors (Pillai, 2017), as we have discussed above. However, these advantages are outweighed by several limitations. </p>
-      <p class="content-paragraph"> Python's interpreted nature, for example, results in slower execution compared to compiled languages like C, which is a significant drawback for operating systems requiring optimal performance. Python's high-level abstractions make direct hardware interaction challenging. This is problematic for operating systems interacting directly with hardware, requiring low-level memory manipulation and direct access to system resources. </p>
-      <p class="content-paragraph"> Furthermore, Python's runtime environment and garbage collector require significant memory overhead, which is not ideal for an operating system that needs to manage resources efficiently. The need to load the Python interpreter before any Python code can run would significantly increase the boot time of an operating system, which is undesirable. </p>
-      <p class="content-paragraph"> C, on the other hand, has historically been the preferred language for operating system development due to its low-level control, superior performance, minimal runtime overhead and portability. It allows direct manipulation of memory and hardware resources, which is crucial for operating system functions. While C also has security challenges, particularly related to memory management (Cifuentes & Bierman, 2019), these issues can be mitigated through careful coding and the use of modern tools and techniques. </p>
-      <p class="content-paragraph"> To conclude, despite Python's advantages in readability, it would not be a better language than C for creating operating systems. The performance, low-level control and efficiency required for operating system development are better suited to C's capabilities. While Python could potentially be used for some higher-level components of an operating system, it is not a suitable replacement for C in the core, low-level functions that form the foundation of an operating system. </p>
+      <p class="content-paragraph"> The suitability of Python versus C for creating operating systems involves
+        considering factors like performance, memory management, hardware interaction and security. While Python offers
+        advantages in readability and certain security aspects, it is generally not considered a better choice than C
+        for operating system development. </p>
+      <p class="content-paragraph"> Python's syntax can lead to more readable and maintainable code, potentially
+        reducing the likelihood of human-introduced bugs in complex systems like operating systems (Pillai, 2017). Its
+        automatic memory management, including garbage collection, can help prevent memory leaks and buffer overflow
+        errors (Pillai, 2017), as we have discussed above. However, these advantages are outweighed by several
+        limitations. </p>
+      <p class="content-paragraph"> Python's interpreted nature, for example, results in slower execution compared to
+        compiled languages like C, which is a significant drawback for operating systems requiring optimal performance.
+        Python's high-level abstractions make direct hardware interaction challenging. This is problematic for operating
+        systems interacting directly with hardware, requiring low-level memory manipulation and direct access to system
+        resources. </p>
+      <p class="content-paragraph"> Furthermore, Python's runtime environment and garbage collector require significant
+        memory overhead, which is not ideal for an operating system that needs to manage resources efficiently. The need
+        to load the Python interpreter before any Python code can run would significantly increase the boot time of an
+        operating system, which is undesirable. </p>
+      <p class="content-paragraph"> C, on the other hand, has historically been the preferred language for operating
+        system development due to its low-level control, superior performance, minimal runtime overhead and portability.
+        It allows direct manipulation of memory and hardware resources, which is crucial for operating system functions.
+        While C also has security challenges, particularly related to memory management (Cifuentes & Bierman, 2019),
+        these issues can be mitigated through careful coding and the use of modern tools and techniques. </p>
+      <p class="content-paragraph"> To conclude, despite Python's advantages in readability, it would not be a better
+        language than C for creating operating systems. The performance, low-level control and efficiency required for
+        operating system development are better suited to C's capabilities. While Python could potentially be used for
+        some higher-level components of an operating system, it is not a suitable replacement for C in the core,
+        low-level functions that form the foundation of an operating system. </p>
       <h3>References</h3>
       <ul class="reference-list">
-        <li> Cifuentes, C. & Bierman, G. (2019) What is a Secure Programming Language? 3rd Summit on Advances in Programming Languages (SNAPL).136(3): 1 - 15. </li>
+        <li> Cifuentes, C. & Bierman, G. (2019) What is a Secure Programming Language? 3rd Summit on Advances in
+          Programming Languages (SNAPL).136(3): 1 - 15. </li>
         <li>Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd. </li>
-        <li>Python Software Foundation (no date) pickle — Python object serialization. Available at: https://docs.python.org/3/library/pickle.html (Accessed: [9 October 2024]). </li>
+        <li>Python Software Foundation (no date) pickle — Python object serialization. Available at:
+          https://docs.python.org/3/library/pickle.html (Accessed: [9 October 2024]). </li>
       </ul>
     </div>
   </main>
